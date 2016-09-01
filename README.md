@@ -107,7 +107,7 @@ file of these frames into the learning code.
 
 Models
 ------
-You can download our pre-trained models here: https://drive.google.com/file/d/0B-xMJ5CYz_F9QS1BTE5yWl9aUWs/view?usp=sharing
+You can download our pre-trained models [here](https://drive.google.com/file/d/0B-xMJ5CYz_F9QS1BTE5yWl9aUWs/view?usp=sharing) (1 GB ZIP file)
 
 Notes
 -----
