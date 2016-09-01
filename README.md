@@ -7,7 +7,7 @@ This repository contains an implementation of:
     Carl Vondrick, Hamed Pirsiavash, Antonio Torralba
     NIPS 2016
 
-which learns from unlabeled video to hallucinate tiny videos.
+which learns to hallucinate tiny videos.
 
 Example Generations
 -------------------
@@ -90,9 +90,9 @@ Training
 
 The code requires a Torch7 installation. 
 
-To train a generator for video, see main.lua. 
+To train a generator for video, see main.lua. This file will construct the networks, start many threads to load data, and train the networks.
 
-For the conditional version, see main_conditional.lua.
+For the conditional version, see main_conditional.lua. This is similar to main.lua, except the input to the model is a static image.
 
 To generate videos, see generate.lua. This file will also output intermediate layers,
 such the mask and background image, which you can inspect manually.
@@ -100,18 +100,21 @@ such the mask and background image, which you can inspect manually.
 Data
 ----
 The data loading is designed assuming videos have been stabilized and flattened
-into JPEG images. For our stabilization code, see the 'extra' directory.
-Essentially, you should convert each video into an image of vertically
-concatenated frames (this is to make IO more efficient). You then pass a text
-file of these frames into the learning code.
+into JPEG images. We do this for efficiency. Stabilization is computationally slow and
+must be done offline, and reading one file per video is more efficient on NFS.
+
+For our stabilization code, see the 'extra' directory.
+Essentially, this will convert each video into an image of vertically
+concatenated frames. After doing this, you create a text file listing
+all the frames, which you pass into the data loader.
 
 Models
 ------
-You can download our pre-trained models [here](https://drive.google.com/file/d/0B-xMJ5CYz_F9QS1BTE5yWl9aUWs/view?usp=sharing) (1 GB ZIP file)
+You can download our pre-trained models [here](https://drive.google.com/file/d/0B-xMJ5CYz_F9QS1BTE5yWl9aUWs/view?usp=sharing) (1 GB ZIP file).
 
 Notes
 -----
-The code is based on DCGAN in Torch7.
+The code is based on [DCGAN](https://github.com/soumith/dcgan.torch) and our [starter code](https://github.com/cvondrick/torch-starter) in [Torch7](https://github.com/torch/torch7).
 
 If you find this useful for your research, please consider citing our NIPS
 paper.
