@@ -1,13 +1,7 @@
 Generating Videos with Scene Dynamics
 =====================================
 
-This repository contains an implementation of:
-
-    Generating Videos with Scene Dynamics
-    Carl Vondrick, Hamed Pirsiavash, Antonio Torralba
-    NIPS 2016
-
-which learns to hallucinate tiny videos.
+This repository contains an implementation of "Generating Videos with Scene Dynamics" by Carl Vondrick, Hamed Pirsiavash, Antonio Torralba, to appear at NIPS 2016. The model learns, from unlabeled video, to generate tiny videos.
 
 Example Generations
 -------------------
