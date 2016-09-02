@@ -112,3 +112,7 @@ The code is based on [DCGAN](https://github.com/soumith/dcgan.torch) and our [st
 
 If you find this useful for your research, please consider citing our NIPS
 paper.
+
+License
+-------
+MIT
