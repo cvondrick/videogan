@@ -1,7 +1,7 @@
 Generating Videos with Scene Dynamics
 =====================================
 
-This repository contains an implementation of [Generating Videos with Scene Dynamics](http://web.mit.edu/vondrick/tinyvideo/) by Carl Vondrick, Hamed Pirsiavash, Antonio Torralba, to appear at NIPS 2016. The model learns to generate tiny videos.
+This repository contains an implementation of [Generating Videos with Scene Dynamics](http://web.mit.edu/vondrick/tinyvideo/) by Carl Vondrick, Hamed Pirsiavash, Antonio Torralba, to appear at NIPS 2016. The model learns to generate tiny videos using adversarial networks.
 
 Example Generations
 -------------------
@@ -89,7 +89,7 @@ To train a generator for video, see main.lua. This file will construct the netwo
 For the conditional version, see main_conditional.lua. This is similar to main.lua, except the input to the model is a static image.
 
 To generate videos, see generate.lua. This file will also output intermediate layers,
-such the mask and background image, which you can inspect manually.
+such as the mask and background image, which you can inspect manually.
 
 Data
 ----
