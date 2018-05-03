@@ -1,7 +1,7 @@
 Generating Videos with Scene Dynamics
 =====================================
 
-This repository contains an implementation of [Generating Videos with Scene Dynamics](http://web.carlvondrick.com/tinyvideo/) by Carl Vondrick, Hamed Pirsiavash, Antonio Torralba, to appear at NIPS 2016. The model learns to generate tiny videos using adversarial networks.
+This repository contains an implementation of [Generating Videos with Scene Dynamics](http://carlvondrick.com/tinyvideo/) by Carl Vondrick, Hamed Pirsiavash, Antonio Torralba, to appear at NIPS 2016. The model learns to generate tiny videos using adversarial networks.
 
 Example Generations
 -------------------
